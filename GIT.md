@@ -84,3 +84,16 @@
   * git tag -d v1.0：本地删除标签
   * git push origin.v1.0：推送某个标签到远程（tags：全部标签）
   * git push origin :refs/tags/v1.0：从远程删除标签，但先要从本地删除
+
+
+
+* #### 同时push到多个github仓库
+
+  * 创建b账号的ssh：ssh-keygen -t rsa -f ~/.ssh/id_rsa_b -C "youmail@example.com"
+  * 将秘钥设置到b账号中
+  * 配置config:
+    * ![image-20210325122627180](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210325122627180.png)
+    * 测试连接是否成功![image-20210325122743723](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210325122743723.png)
+  * 在项目文件中配置用户名和邮箱![image-20210325122845012](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210325122845012.png)
+  * 修改远程仓库地址![image-20210325123036348](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210325123036348.png)
+  * push测试
